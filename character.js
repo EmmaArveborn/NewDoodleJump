@@ -5,7 +5,13 @@ let y = 100;
 function draw (){ 
     // body
     fill (250, 50, 10);
-    triangle (x+ 100, y+170, x+ 85, y+ 250, x+ 115, y+ 250); 
+    triangle (x+ 100, y+170, x+ 85, y+ 250, x+ 115, y+ 250);
+    
+    // Legs
+    stroke (50, 50, 50);
+    line ( x+104, y+254, x+104, y+266);
+    line ( x+94, y+254, x+94, y+266);
+
     // skirt hem
     fill (250, 250, 250); 
     stroke ( 211, 211, 211); 
@@ -36,7 +42,9 @@ function draw (){
     circle ( x+ 105, y+ 169, 3); 
     circle ( x+ 102, y+ 168, 3); 
 
+    // Arms
     stroke (50, 50, 50);
     line ( x+ 106, y+ 202, x+ 122, y+ 212);
     line ( x+ 94, y+ 202, x+ 78, y+ 212); 
+
 }
