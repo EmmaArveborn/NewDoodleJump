@@ -1,9 +1,6 @@
-function setup (){ 
-    createCanvas (300, 700);
     background (250, 250, 250);
-}
 
-export default class platform { 
+export default class Platform { 
     xPos;
     yPos;
     height;
