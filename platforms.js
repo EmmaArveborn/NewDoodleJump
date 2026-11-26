@@ -1,20 +1,20 @@
-    background (250, 250, 250);
+background (250, 250, 250);
 
 export default class Platform { 
-    xPos;
+    xPos; 
     yPos;
-    height;
-    width; 
+    width;
+    height; 
 
-constructor (x, y, height, width){ 
+constructor(x, y, width, height){ 
     this.xPos = x; 
     this.yPos= y; 
-    this.height= height;
     this.width = width; 
+    this.height= height;
 }
 draw (){ 
-    fill (150, 170, 160);
-    rect (this.xPos, this.yPos, this.height, this.width);
+    fill ( 250, 50, 50); 
+    rect (this.xPos, this.yPos,this.width, this.height);
 }
 move () {
     this.xPos -= 1;
