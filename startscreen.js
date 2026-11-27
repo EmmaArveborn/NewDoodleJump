@@ -12,8 +12,9 @@ export default class Startscreen {
         push();
         textSize(25);
         textAlign(CENTER, CENTER);
+        textFont("Verdana");
         fill(135, 210, 230); //Färg på textrutan
-        rect(this.xPos, this.yPos, this.width, this.height);
+        rect(this.xPos, this.yPos, this.width, this.height, 25);
         fill(0,0,0); //Färg på text
         text(this.text, 
             this.xPos + this.width / 2,
