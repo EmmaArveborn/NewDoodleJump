@@ -1,17 +1,34 @@
-function setup(){
-    createCanvas(500, 700);
-    background(138, 206, 250);
-}
-function draw(){
-    fill("Blue");
-    rect(150, 200, 200, 150, 20);
+export default class Startscreen {
 
-    fill("white");
-    text("GAME START",210, 280); 
-} 
+    constructor (x, y, width, height, text) {
+        this.xPos = x;
+        this.yPos = y;
+        this.width = width;
+        this.height = height;
+        this.text = text;
+    } 
 
-function mouseClicked(){
-    if(mouseX > 150 && mouseX < 350 && mouseY > 150 && mouseY < 350){
-        console.log("It works");
+    draw(){
+        push();
+        textSize(25);
+        textAlign(CENTER, CENTER);
+        fill(135, 210, 230); //Färg på textrutan
+        rect(this.xPos, this.yPos, this.width, this.height);
+        fill(0,0,0); //Färg på text
+        text(this.text, 
+            this.xPos + this.width / 2,
+            this.yPos + this.height / 2);
+        pop();
+    }
+
+    isHovered(){
+        if (
+            mouseX > this.xPos &&
+            mouseX < this.xPos + this.width &&
+            mouseY > this.yPos &&
+            mouseY < this.yPos + this.height
+        ) { return true;}
+        else { 
+            return false;}
     }
 }
