@@ -1,4 +1,4 @@
-export default class Startscreen {
+export default class Button {
 
     constructor (x, y, width, height, text) {
         this.xPos = x;

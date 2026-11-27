@@ -1,4 +1,4 @@
-import Startscreen from "./startscreen.js";
+import Button from "./button.js";
 
 const gameState = {
     intro: "gameIntro",
@@ -10,7 +10,7 @@ let startButton;
 
 function setup() {
     createCanvas(500, 700);
-    startButton = new Startscreen(150, 200, 200, 100, "GAME START");
+    startButton = new Button(150, 300, 200, 100, "GAME START");
 }
 
 function draw() {
